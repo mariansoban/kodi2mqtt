@@ -162,10 +162,10 @@ class MQTTPlayer(xbmc.Player):
     def onPlayBackSeekChapter(self):
         publishprogress()
 
-    def onPlayBackSpeedChanged(speed):
+    def onPlayBackSpeedChanged(self, speed):
         setplaystate(1,"speed")
 
-    def onQueueNextItem():
+    def onQueueNextItem(self):
         mqttlogging("MQTT onqn");
 
 #
